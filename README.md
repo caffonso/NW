@@ -47,10 +47,11 @@ Serão utilizadas seguintes bibliotecas python:
 
 ## Setup
 
-### Câmera Basler
+### Câmera
 
+A interface entre o *hardware* da câmera Basler (AcA1300-200uc) e a sistema de visão será realizado através do app **pypylon**.  
 
-Maiores informações sobre o app **pypylon**, pode ser obtidas através do link: https://github.com/basler/pypylon
+Maiores informações sobre o app pode ser obtidas através do link: https://github.com/basler/pypylon
 
 Para instalação windows:
 ```
