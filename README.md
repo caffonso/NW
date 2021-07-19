@@ -25,5 +25,23 @@ Pode ser necessário instalar dependências para o módulo wxPython. Elas podem 
 
 Serão utilizadas seguintes bibliotecas python:
 
-<img src="library.png" alt="My cool logo"/>
+import numpy as np
+from PIL import Image 
+import cv2
+import pypylon.pylon as py
+import pickle
+import h5py
+import time as tm
+import os
+import glob
+import matplotlib.pyplot as plt
+from PIL import Image 
+from keras.models import load_model
+import time
+import logging
+import sys
+import snap7
+from snap7 import util
+from scipy import signal
+from keras import layers 
 
