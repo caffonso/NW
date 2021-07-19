@@ -58,7 +58,9 @@ Para instalação windows:
 pip3 install pypylon
 ```
 
-O app **pypylon**, deve ser feito através do prompt através da método 
+O app **pypylon**, deve ser feito através do prompt através da método neurowood.basler():
+
+
 
 ![image](pylon.png)
 
