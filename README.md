@@ -1,5 +1,6 @@
+-----------
 # NeuroWood
-
+-----------
 NeuroWood é um software para classificação de qualidade da madeira, voltado à soluções para a indústria madeireira e moveleira. Utiliza técnicas de aprendizado de máquina e visão computacional para classificar imagens do fluxo de processos na madeira em tempo real, permitindo tomada de decisão rápida e automática.
 
 ## Instalação
@@ -25,22 +26,22 @@ Pode ser necessário instalar dependências para o módulo wxPython. Elas podem 
 
 Serão utilizadas seguintes bibliotecas python:
 
-numpy\
-PIL import Image \
-cv2\
-pypylon.pylon as py\
-pickle\
-h5py\
-time as tm\
-os\
-glob\
-matplotlib.pyplot as plt\
-PIL import Image \
-keras.models import load_model\
-logging\
-sys\
-snap7\
-snap7 import util\
-from scipy import signal\
-from keras import layers \
+*  numpy\
+  PIL import Image \
+  cv2\
+  pypylon.pylon as py\
+  pickle\
+  h5py\
+  time as tm\
+  os\
+  glob\
+  matplotlib.pyplot as plt\
+  PIL import Image \
+  keras.models import load_model\
+  logging\
+  sys\
+  snap7\
+  snap7 import util\
+  from scipy import signal\
+  from keras import layers \
 
