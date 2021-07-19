@@ -45,7 +45,7 @@ Serão utilizadas seguintes bibliotecas python:
 *  from scipy import signal 
 *  from keras import layers 
 
-
+![Área Seleção de Ação](README/pylon.png)
 
 ![image](https://user-images.githubusercontent.com/11728436/126227922-bb10e089-f5f6-4afb-a3c4-973624c13ba6.png)
 
