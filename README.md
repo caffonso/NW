@@ -45,6 +45,7 @@ Serão utilizadas seguintes bibliotecas python:
 *  from scipy import signal 
 *  from keras import layers 
 
+![image](https://user-images.githubusercontent.com/11728436/126227729-6ba81ba7-c3f5-444f-97ee-30b75bdfdc89.png)
 
 
 
