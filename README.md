@@ -72,6 +72,7 @@ O app **pypylon**, deve ser feito através do prompt através da método neurowo
       camera.Close()
 ```
 
+Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><action>
 
 ![image](pylon.png)
 
