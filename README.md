@@ -60,8 +60,17 @@ pip3 install pypylon
 
 O app **pypylon**, deve ser feito através do prompt através da método neurowood.basler():
 
-
-
+```
+    def basler():
+      device = py.TlFactory.GetInstance().CreateFirstDevice()
+      camera = py.InstantCamera(device)
+      camera.Open()
+      camera.PixelFormat = "RGB8"
+      grab  = camera.GrabOne(400)
+      image = grab.Array
+      image = Image.fromarray(image)
+      camera.Close()
+```
 ![image](pylon.png)
 
 
