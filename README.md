@@ -25,9 +25,9 @@ Pode ser necessário instalar dependências para o módulo wxPython. Elas podem 
 
 Serão utilizadas seguintes bibliotecas python:
 
-import numpy as np
-from PIL import Image 
-import cv2
+import numpy as np\
+from PIL import Image \
+import cv2\
 import pypylon.pylon as py
 import pickle
 import h5py
