@@ -49,7 +49,7 @@ Serão utilizadas seguintes bibliotecas python:
 
 ### Câmera
 
-A interface entre o *hardware* da câmera Basler (AcA1300-200uc https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1300-200uc/) e a sistema de visão será realizado através do app **pypylon**.  
+A interface entre o *hardware* da câmera Basler (https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1300-200uc/) e a sistema de visão será realizado através do app **pypylon**.  
 
 Maiores informações sobre os requisitos, setups e instalção do app pode ser obtidas através do link: https://github.com/basler/pypylon
 
@@ -71,6 +71,8 @@ O app **pypylon**, deve ser feito através do prompt através da método neurowo
       image = Image.fromarray(image)
       camera.Close()
 ```
+
+
 ![image](pylon.png)
 
 
