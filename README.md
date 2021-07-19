@@ -22,3 +22,6 @@ sudo python3 -m pip install numpy scipy sklearn scikit-image
 sudo python3 -m pip install https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04/wxPython-4.0.0b1-cp36-cp36m-linux_x86_64.whl phoenix gooey
 ```
 Pode ser necessário instalar dependências para o módulo wxPython. Elas podem ser verificadas [aqui](https://github.com/wxWidgets/Phoenix/blob/master/README.rst#prerequisites)
+
+Serão utilizadas seguintes bibliotecas python:
+
