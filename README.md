@@ -50,11 +50,17 @@ Serão utilizadas seguintes bibliotecas python:
 ### Câmera Basler
 
 
-Instalar o app **pypylon**, a instalação pode ser através do link: https://github.com/basler/pypylon
-Instalação:
+Maiores informações sobre o app **pypylon**, pode ser obtidas através do link: https://github.com/basler/pypylon
+
+Para instalação windows:
 ```
 pip3 install pypylon
 ```
+E para linux:
+```
+sudo python3 -m pip install pypylon
+```
+
 Abrir o programa da câmera Basler através do app **pypylon**. Isso será feito através do prompt.
 
 ![image](pylon.png)
