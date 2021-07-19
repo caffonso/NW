@@ -45,6 +45,10 @@ Serão utilizadas seguintes bibliotecas python:
 *  from scipy import signal 
 *  from keras import layers 
 
+## Setup
+
+Abrir o programa da câmera Basler através do app **pypylon**. Isso será feito através do prompt.
+
 ![image](pylon.png)
 
 
