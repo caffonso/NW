@@ -25,5 +25,5 @@ Pode ser necessário instalar dependências para o módulo wxPython. Elas podem 
 
 Serão utilizadas seguintes bibliotecas python:
 
-<img src="libray.png" alt="My cool logo"/>
+<img src="library.png" alt="My cool logo"/>
 
