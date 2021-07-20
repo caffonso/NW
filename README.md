@@ -160,3 +160,4 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
 |sugidades ou corpos estranhos  | Limpar área utilizando um pano seco                           |    
 |imagem fora de foco            | Ajuste manual do foco nas lentes                              | 
 
+ 
