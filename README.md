@@ -106,7 +106,7 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
 
 ![image](Files/Enhanced.png)
 
-
+ 
 A fim de ajuste as pecas devem ser liberadas manualmente e em pequena quantidade, até que a captura das imagens
 esteja totalmente ajustada, conforme imagem abaixo.
 
