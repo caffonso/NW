@@ -84,7 +84,7 @@ abaixo da câmera e ajustar os recortes através do método **Enhance**
 
     
  As estremidades das pecas são encontradas atraves do método **corner()**.
-    
+ '''  
     def corner(im0,args,channel):
       rx,ry,r0y,yc,xc,edge     = args.rx,args.ry,args.r0y,args.yc,args.xc,args.edge   
       my,mx,Max                = 0,0,0 
@@ -109,4 +109,11 @@ abaixo da câmera e ajustar os recortes através do método **Enhance**
       minX = minX0  
 
       return minX,minY
+'''   
+Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja adquado:
+* rx
+* ry
+* xc
+* yc 
+    
     
