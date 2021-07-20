@@ -162,5 +162,33 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
 |imagem fora de foco            | Ajuste manual do foco nas lentes                              | 
 
 
-![image](https://user-images.githubusercontent.com/11728436/126399871-b3c4635c-c5d6-41c2-968a-fd30e673c85d.png)
+name 	description	group	Instance	default	type
+action	specify action performade for the system	Selection	parser_data	run	str
+SetUp	Define action mode porduction or setup	Selection	parser_classify	production	str
+class	Slats Quality class 	Selection	parser_data	A	str
+Type	image type	image 	parser_data	.bmp	str
+Dir	path where acquisition image train is stored	path 	parser_data	<path>	str
+DirClass	path where acquisition image classsified is stored	path 	parser_classify	<path>	str
+NameModel	select the cnn model	Model 	parser_classify	FaberLN	str
+th	 pixel threshold detect edge	optical 	parser_data	0.2	float
+thquide	pixel threshold detect edge	optical 	parser_data	0.2	float
+thmiddle	pixel threshold detect edge	optical 	parser_data	1.2	float
+edge	to edge the border	geometric	parser_data	1	int
+thquide	pixel threshold detect edge	optical	parser_classify	0.2	float
+thmiddle	pixel threshold detect edge	optical	parser_classify	1.2	float
+edge	parameter for image  for crop  image 	geometric	parser_classify	1	int
+rx	parameter for image  for crop  image 	geometric	parser_classify	80	int
+ry	parameter for image  for crop  image 	geometric	parser_classify	600	int
+yc	parameter for image  for crop  image 	geometric	parser_classify	1180	int
+xc	parameter for image  for crop  image 	geometric	parser_classify	510	int
+Dx	Crop size	geometric	parser_classify	460	int
+DY	Crop size	geometric	parser_classify	215	int
+X1	total length	geometric	parser_classify	1280	int
+Y1	total width	geometric	parser_classify	720	int
+FrX	frame length	geometric	parser_classify	504	int
+Fry	frame width	geometric	parser_classify	280	int
+Expoure	adjust camera exposure	optical	parser_classify	700	int
+args	variable with all others variables encapsulated	encapsulted	neuroframe	null	parser
+![image](https://user-images.githubusercontent.com/11728436/126400014-f9fe9dec-a73f-4389-b181-2efb3ecabb86.png)
+
 
