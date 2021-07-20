@@ -90,7 +90,7 @@ uma boa captação de imagens:
         showEnhance(im0,args,minX,minY)  
 
     
- As estremidades das pecas são encontradas atraves do método **corner()**.
+ As estremidades das pecas são encontradas atraves do método ```corner()``.
     
 
     def corner(im0,args,channel):
@@ -129,4 +129,4 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
     
 | problema     | ação  | 
 | :---:        | :---: | 
-| *over light* | Ajustar *Exposure* da camerâ através do método <pylon>   |
+| *over light* | Ajustar *Exposure* da camerâ através do método ```pylon```   |
