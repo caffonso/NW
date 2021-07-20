@@ -109,49 +109,14 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
 
  
 A fim de ajuste as pecas devem ser liberadas manualmente e em pequena quantidade, até que a captura das imagens
-esteja totalmente ajustada, conforme imagem abaixo.
+esteja totalmente ajustada, conforme imagem abaixo. Estas operações sáo realizadas pelos métodos, ```wall()``` e ```enhance()```
 
 ![image](Files/Sample156.bmp) 
 
 
-        minX,minY = corner(im0,args,channel)
-        showEnhance(im0,args,minX,minY)  
 
     
- As estremidades das pecas são encontradas atraves do método ```corner()```.
-    
 
-    def corner(im0,args,channel):
-      rx,ry,r0y,yc,xc,edge     = args.rx,args.ry,args.r0y,args.yc,args.xc,args.edge   
-      my,mx,Max                = 0,0,0 
-      minY,minX                = args.r0y,0
-
-      for i in range(0,rx):
-        mx = (im0[yc,i,channel]-im0[yc,i+1,channel])**2
-        if mx >= Max:
-          Max  = mx
-          minX0 = i
-      minX0 = minX0+edge
-
-      my,mx,Max                = 0,0,0
-      for i in range(r0y,ry):
-        my = (im0[i,xc,channel]-im0[i+1,xc,channel])**2
-        if my>= Max:
-          Max = my
-          minY1     = i
-      minY1 = minY1 + edge     
-
-      minY = minY1 
-      minX = minX0  
-
-      return minX,minY
- 
-Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja adquado:
-* rx
-* ry
-* xc
-* yc 
-    
     
 ### Resolução de problemas.
     
