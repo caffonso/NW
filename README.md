@@ -85,7 +85,9 @@ uma boa captação de imagens:
 
 * *over light*
 * sugidades ou corpos estranhos
-* imagem fora de foco     
+* imagem fora de foco
+
+![image](Files/Sample617.bmp) 
 
 
 ### Imagens dinâmicas
@@ -150,6 +152,6 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
     
 | problema     | ação  | 
 | :---:        | :---: | 
-| *over light*                  | Ajustar *Exposure* da camerâ através do método ``pylon``.     |
+| *over light*                  | Ajustar *Exposure* da camerâ através do método pylon.     |
 |sugidades ou corpos estranhos  | Limpar área utilizando um pano seco                           |    
 |imagem fora de foco            | Ajuste manual do foco nas lentes                              |
