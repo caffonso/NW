@@ -76,7 +76,11 @@ Os parâmetros da câmera deve ser ajustado no app neurowood acessando ``<data><
 #### Imagens estáticas
 
 Incialmente deve-se ajustar as imagens estáticas, possicionando uma amostra de peca diretamente 
-abaixo da câmera e ajustar os recortes através do método ```OpenImage()```. Os disturbios devem ser verificados eliminados, a fim de garantir a
+abaixo da câmera e ajustar os recortes através do método ```OpenImage()```. 
+![image](blob/main/Files/showimg.png)
+
+
+Os disturbios devem ser verificados eliminados, a fim de garantir a
 uma boa captação de imagens:
 
 * *over light*
