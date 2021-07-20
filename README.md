@@ -103,12 +103,7 @@ Acionar o metodoo ``` Enhancement```, conforme ilustração a seguir:
 
 ![image](Files/enhance.png)
 
-Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja adquado:
-* rx
-* ry
-* xc
-* yc
-* th
+Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja adquado:```rx,ry,xc,yc,th```
 
 ![image](Files/Enh.png)
 
