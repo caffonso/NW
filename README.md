@@ -103,6 +103,7 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
 * ry
 * xc
 * yc
+* th
 
 ![image](Files/Enh.png)
 
