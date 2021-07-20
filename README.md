@@ -58,25 +58,21 @@ Para instalação windows:
 pip3 install pypylon
 ```
 
-O app **pypylon**, deve ser feito através do prompt através da método neurowood.basler():
+O app **pypylon**, deve ser feito através do prompt através da método OpenPylon():
 
 ```
-    def basler():
-      device = py.TlFactory.GetInstance().CreateFirstDevice()
-      camera = py.InstantCamera(device)
-      camera.Open()
-      camera.PixelFormat = "RGB8"
-      grab  = camera.GrabOne(400)
-      image = grab.Array
-      image = Image.fromarray(image)
-      camera.Close()
+    def OpenPylon():
+      os.system("/opt/pylon5/bin/./PylonViewerApp")
 ```
 
-Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><action>
+Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><action><pylon>
     
 
 ![image](pylon.png)
 
+ Aparecera a tela do app da camera onde deve ajustar:
+    * Exposure ( default = 600 )
+    
 ### Capitura da imagem
 
     
