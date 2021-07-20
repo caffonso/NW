@@ -73,9 +73,13 @@ O app **pypylon**, deve ser feito através do prompt através da método neurowo
 ```
 
 Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><action>
+    
 
 ![image](pylon.png)
 
+### Capitura da imagem
+
+    
 
 
 
