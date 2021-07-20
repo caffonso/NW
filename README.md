@@ -70,7 +70,7 @@ Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><ac
 
 ![image](pylon.png)
 
- Aparecera a tela do app da camera onde deve ajustar:
+ Aparecera a tela do app da camera onde deve ajustar:\
     * Exposure ( default = 600 )
     
 ### Capitura da imagem
