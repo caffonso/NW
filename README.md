@@ -78,8 +78,8 @@ Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><ac
 Incialmente deve-se ajustar as imagens estáticas, possicionando uma amostra de peca diretamente 
 abaixo da câmera e ajustar os recortes através do método **OpenImage()**. Os disturbios devem ser verificados eliminados, a fim de garantir a
 uma boa captação de imagens:
-* aussenciar de *over light*
-* aussencia de sugidades ou corpos estranhos
+* *over light*
+* sugidades ou corpos estranhos
 * imagem fora de foco     
     
     
@@ -127,6 +127,6 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
     
 ### Resolução de problemas.
     
-| Attempt | #1 | #2 |
-| :---: | :---: | :---: |
-| Seconds | 301 | 283 |
+| problema     | ação  | 
+| :---:        | :---: | 
+| *over light* | Ajustar *Exposure* da camerâ através do método <pylon>   |
