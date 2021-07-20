@@ -87,6 +87,26 @@ uma boa captação de imagens:
 * sugidades ou corpos estranhos
 * imagem fora de foco     
 
+
+### Imagens dinâmicas
+
+Nesta etápa são ajustadas as imagens em condição de operação portanto, deve-se certificar que a esteira de movimentaçõ deve estar operando
+em velocidade de produção. 
+Acionar o metodoo ``` Enhancement```, conforme ilustração a seguir:
+
+![image](Files/enhance.png)
+
+Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja adquado:
+* rx
+* ry
+* xc
+* yc
+*
+A fim de ajuste as pecas devem ser liberadas manualmente e em pequena quantidade, até que a captura das imagens
+esteja totalmente ajustada.
+
+
+
         minX,minY = corner(im0,args,channel)
         showEnhance(im0,args,minX,minY)  
 
@@ -130,6 +150,6 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
     
 | problema     | ação  | 
 | :---:        | :---: | 
-| *over light*                  | Ajustar *Exposure* da camerâ através do método ```pylon```.   |
+| *over light*                  | Ajustar *Exposure* da camerâ através do método ``pylon``.     |
 |sugidades ou corpos estranhos  | Limpar área utilizando um pano seco                           |    
 |imagem fora de foco            | Ajuste manual do foco nas lentes                              |
