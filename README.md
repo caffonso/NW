@@ -161,4 +161,6 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
 |sugidades ou corpos estranhos  | Limpar área utilizando um pano seco                           |    
 |imagem fora de foco            | Ajuste manual do foco nas lentes                              | 
 
- 
+
+![image](https://user-images.githubusercontent.com/11728436/126399871-b3c4635c-c5d6-41c2-968a-fd30e673c85d.png)
+
