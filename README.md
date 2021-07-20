@@ -78,10 +78,9 @@ Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><ac
 Incialmente deve-se ajustar as imagens estáticas, possicionando uma amostra de peca diretamente 
 abaixo da câmera e ajustar os recortes através do método **Enhance**
 
-'''
+
         minX,minY = corner(im0,args,channel)
-        #if guide > .54:
-        #  minX = 0
         showEnhance(im0,args,minX,minY)  
 
-'''
+    
+    
