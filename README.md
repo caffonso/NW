@@ -49,7 +49,7 @@ Serão utilizadas seguintes bibliotecas python:
 
 ### Câmera
 
-A interface entre o *hardware* da câmera Basler (https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1300-200uc/) e a sistema de visão será realizado através do app **pypylon**.  
+A interface entre o *hardware* da câmera Basler (https://www.baslerweb.com/en/products/cameras/area-scan-cameras/ace/aca1300-200uc/) e a sistema de visão será realizado através do app ```pypylon```.  
 
 Maiores informações sobre os requisitos, setups e instalção do app pode ser obtidas através do link: https://github.com/basler/pypylon
 
@@ -58,14 +58,14 @@ Para instalação windows:
 pip3 install pypylon
 ```
 
-O acesso ao app **pypylon**, deve ser feito através do prompt através da método **OpenPylon()**:
+O acesso ao app **pypylon**, deve ser feito através do prompt através da método ```OpenPylon()```:
 
 ```
     def OpenPylon():
       os.system("/opt/pylon5/bin/./PylonViewerApp")
 ```
 
-Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><action><pylon>
+Os parâmetros da câmera deve ser ajustado no app neurowood acessando ``<data><action><pylon>``
     
 
 ![image](pylon.png)
@@ -75,22 +75,21 @@ Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><ac
     
 ### Capitura das imagem
 
+#### Imagens estáticas
+
 Incialmente deve-se ajustar as imagens estáticas, possicionando uma amostra de peca diretamente 
-abaixo da câmera e ajustar os recortes através do método **OpenImage()**. Os disturbios devem ser verificados eliminados, a fim de garantir a
+abaixo da câmera e ajustar os recortes através do método ```OpenImage()```. Os disturbios devem ser verificados eliminados, a fim de garantir a
 uma boa captação de imagens:
+
 * *over light*
 * sugidades ou corpos estranhos
 * imagem fora de foco     
-    
-    
-    
-
 
         minX,minY = corner(im0,args,channel)
         showEnhance(im0,args,minX,minY)  
 
     
- As estremidades das pecas são encontradas atraves do método ```corner()``.
+ As estremidades das pecas são encontradas atraves do método ```corner()```.
     
 
     def corner(im0,args,channel):
@@ -129,4 +128,5 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
     
 | problema     | ação  | 
 | :---:        | :---: | 
-| *over light* | Ajustar *Exposure* da camerâ através do método ```pylon```   |
+| *over light*                  | Ajustar *Exposure* da camerâ através do método ```pylon```   |
+| sugidades ou corpos estranhos | Limpar área utilizando um pano seco                          |    
