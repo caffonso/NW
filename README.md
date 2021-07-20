@@ -58,7 +58,7 @@ Para instalação windows:
 pip3 install pypylon
 ```
 
-O app **pypylon**, deve ser feito através do prompt através da método OpenPylon():
+O acesso ao app **pypylon**, deve ser feito através do prompt através da método OpenPylon():
 
 ```
     def OpenPylon():
@@ -70,11 +70,13 @@ Os parâmetros da câmera deve ser ajustado no app neurowood acessando <data><ac
 
 ![image](pylon.png)
 
- Aparecera a tela do app da camera onde deve ajustar:\
-*  Exposure ( default = 600 )
+ Aparecera a tela do app da camera onde deve ajustar:
+*  Exposure ( default = 800 )
     
-### Capitura da imagem
+### Capitura das imagem
 
+Incialmente deve-se ajustar as imagens estáticas, possicionando uma amostra de peca diretamente 
+abaixo da câmera e ajustar os recortes através do método 
     
 
 
