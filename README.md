@@ -105,8 +105,9 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
 * yc
 *
 A fim de ajuste as pecas devem ser liberadas manualmente e em pequena quantidade, até que a captura das imagens
-esteja totalmente ajustada.
+esteja totalmente ajustada, conforme imagem abaixo.
 
+![image](Files/Sample156.bmp) 
 
 
         minX,minY = corner(im0,args,channel)
@@ -152,7 +153,7 @@ Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja 
     
 | problema     | ação  | 
 | :---:        | :---: | 
-| *over light*                  | Ajustar *Exposure* da camerâ através do método pylon.     |
+| *over light*                  | Ajustar *Exposure* da camerâ através do método `pylon`.         |
 |sugidades ou corpos estranhos  | Limpar área utilizando um pano seco                           |    
 |imagem fora de foco            | Ajuste manual do foco nas lentes                              |
 
