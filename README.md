@@ -45,7 +45,7 @@ Serão utilizadas seguintes bibliotecas python:
 *  from scipy import signal 
 *  from keras import layers 
 
-### Parameters
+### Parametros
 O programa possue os seguintes parâmetros ajustáveis:
 
 ![image](https://user-images.githubusercontent.com/11728436/126400014-f9fe9dec-a73f-4389-b181-2efb3ecabb86.png)
@@ -57,7 +57,7 @@ O programa possue os seguintes parâmetros ajustáveis:
 A garantia de 12 meses após a entrega final do equipamento. A 
 garantia se aplica ao software quanto:
 
-I. Funcionamento geral (licenças e versões de software compatíveis);
+I. Funcionamento geral (licenças e versões de software compatíveis);\
 II. Captura e qualidade de imagem (caso houver recortes por problemas de trigger, programação e 
 etc.);
 III. Quanto a acurácia mínima de 90%, caso a mesma venha a decair conforme o tempo, o fornecedor 
