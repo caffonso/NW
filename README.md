@@ -106,7 +106,7 @@ Os parâmetros internos desse método são:
 | slot     | número do slot onde o sistema de visão esta alocado  |1            |
 | Class    | Predição do modelo matemático                        |0 ou 1       | 
 
-O sistema de visão envia um bloco de sinal continuamente para o módulos de comunicação via ethernet, quanto o CLP receber o valor 9 na possição ```start:1```, isto indicará 
+O sistema de visão envia um bloco de sinal continuamente para o módulos de comunicação via ethernet, quanto este receber o conteudo ```9``` na possição ```start:1```, isto indicará 
 que o proximo sinal enviado para a possição ```star:2```será o valor da predição do modelo dado pela variável ```Class```, após esse processo o bloco retorna a possição original.
 ```
           Sincronize(9,plc,1,1)     ##
