@@ -52,6 +52,13 @@ O programa possue os seguintes parâmetros ajustáveis:
 
 ## Setup
 
+### Interface com controlador lógico programável CLP
+
+O software de sistema de visão  possui comunicação com o CLP - [Simens S7 1200](https://cache.industry.siemens.com/dl/files/465/36932465/att_106119/v1/s71200_system_manual_en-US_en-US.pdf) em rede ethernet, 
+o qual envia e recebe informações na linguagem LADDER. 
+O CLP deverá aguardar um byte de informação dos processadores de sistema de visão
+(NUC) avisando que as câmeras e softwares estão OK para iniciar o processo de “liga da máquina”.
+
 ### Câmera
 
 A interface entre o *hardware* da câmera Basler ([acA1300-200uc](https://github.com/caffonso/NW/blob/main/Files/acA1300-200uc_Datasheet.pdf)) e a sistema de visão será realizado através do app ```pypylon```.
@@ -116,16 +123,14 @@ esteja totalmente ajustada, conforme imagem abaixo. Estas operações sáo reali
 
 
     
-
-    
 ### Resolução de problemas.
     
 | problema     | ação  | 
 | :---:        | :---: | 
-| *over light*                  | Ajustar *Exposure* da camerâ através do método `pylon`.         |
-|sugidades ou corpos estranhos  | Limpar área utilizando um pano seco                           |    
-|imagem fora de foco            | Ajuste manual do foco nas lentes                              | 
-
+| *over light*                                           | Ajustar *Exposure* da camerâ através do método `pylon`.       |
+|sugidades ou corpos estranhos                           | Limpar área utilizando um pano seco                           |    
+|imagem fora de foco                                     | Ajuste manual do foco nas lentes                              | 
+|Corte (cropp) irregular, sobre ou falta peça            | Ajustar parâmetros geometricos ```(rx,ry,xc,xy,th) ```        | 
 
 
 
