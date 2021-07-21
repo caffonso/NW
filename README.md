@@ -101,10 +101,10 @@ Os parâmetros internos desse método são:
 | plc      | Objeto da classe ``` cliente.Client```               | null        |
 | IP       | Endereço do CLP cliente                              |'10.10.0.30' |
 | DB       | comprimento do bloco bytearray enviado para CLP      |1            |
-| start    | possição inicial para escritá do bloco butearray     |1, 2, 3      |
+| start    | possição inicial para escritá do bloco butearray     |0,1, 2, 3    |
 | rack     | número do rack onde CLP está alocado                 |0            |
 | slot     | número do slot onde o sistema de visão esta alocado  |1            |
-| Class    | Predição do modelo matemático                        |0 ou 1       | 
+| Class    | Predição do modelo matemático                        |bytearray(0) | 
 
 O sistema de visão envia um bloco de sinal continuamente para o módulos de comunicação via ethernet, quanto este receber o conteudo ```9``` na possição ```start:1```, isto indicará 
 que o proximo sinal enviado para a possição ```star:2```será o valor da predição do modelo dado pela variável ```Class```, após esse processo o bloco retorna a possição original.
@@ -116,6 +116,13 @@ que o proximo sinal enviado para a possição ```star:2```será o valor da predi
           Sincronize(0,plc,1,3)     ##
           Sincronize(0,plc,1,1)     ##
 ```
+
+Exemplo de ```bloco bytearray```:
+
+| possiçao     | 0  |  1  |  2  |  3 | 
+| :---:        | :---: | :---: | :---: | :---: | 
+| conteúdo     | 7  |9    |1   |0    |
+
 ### Câmera
 
 A interface entre o *hardware* da câmera Basler [acA1300-200uc](https://github.com/caffonso/NW/blob/main/Files/acA1300-200uc_Datasheet.pdf) 
