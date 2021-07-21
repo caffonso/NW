@@ -117,7 +117,8 @@ que o proximo sinal enviado para a possição ```star:2```será o valor da predi
           Sincronize(0,plc,1,1)     ##
 ```
 
-Exemplo de ```bloco bytearray```:
+Exemplo de ```bloco bytearray```, indicando que o processo esta em andamento ```pos0```= 7, foi detectada um peça ```pos1```= 9, e que a 
+previsão do modelo matático é da classe 1, ```pos2``` = 1.
 
 | possiçao     | 0  |  1  |  2  |  3 | 
 | :---:        | :---: | :---: | :---: | :---: | 
