@@ -78,6 +78,30 @@ Cliente e prestar todo suporte necessário para resolução do problema.
 O software de sistema de visão  possui comunicação com o CLP - [Simens S7 1200](https://cache.industry.siemens.com/dl/files/465/36932465/att_106119/v1/s71200_system_manual_en-US_en-US.pdf) em rede ethernet, 
 o qual envia e recebe informações na linguagem LADDER. 
 O CLP deverá aguardar um byte de informação dos processadores de sistema de visão avisando que as câmeras e softwares estão OK para iniciar o processo de “liga da máquina”.
+A conecção entre o sistema de visão e o CLP será realizado através do *Wrapper* [snap7](https://python-snap7.readthedocs.io/en/latest/). O controle é realizado 
+pelos métodos ```OpenPLC``` e ```Sincronize```, como segue:
+
+    def OpenPLC(IP,rack,slot):
+      plc = snap7.client.Client()
+      plc.connect(IP,rack,slot)
+      print('PLC siemens:',plc.get_connected())
+      return plc  
+
+
+    def Sincronize(Class,plc,DB,start):       # DB,start
+      #print('Class',Class)
+      plc.db_write(DB,start,bytes([Class]))
+
+Os parâmetros internos desse método são:
+
+| nome     | descrição  | defalt |
+| :---:    | :---: | :---: |
+| plc      | Objeto da classe ``` cliente.Client````              | null   |
+| IP       | Endereço do CLP cliente                              | 011    |
+| rack     | número do rack onde CLP está alocado                 |-       |
+| slot     | número do slot onde o sistema de visão esta alocado  |-       |
+| Class    | Predição do modelo matemático                        | 0 ou 1 | 
+
 
 ### Câmera
 
