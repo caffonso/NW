@@ -50,18 +50,38 @@ O programa possue os seguintes parâmetros ajustáveis:
 
 ![image](https://user-images.githubusercontent.com/11728436/126400014-f9fe9dec-a73f-4389-b181-2efb3ecabb86.png)
 
+## *Hardware*
+
+## Garantia e assistência técnica
+
+A garantia de 12 meses após a entrega final do equipamento. A 
+garantia se aplica ao software quanto:
+
+I. Funcionamento geral (licenças e versões de software compatíveis);
+II. Captura e qualidade de imagem (caso houver recortes por problemas de trigger, programação e 
+etc.);
+III. Quanto a acurácia mínima de 90%, caso a mesma venha a decair conforme o tempo, o fornecedor 
+deverá prestar garantia para que esse número seja sempre superior ou igual ao determinado 
+nesse memorial descritivo técnico;
+IV. Durante o período de finalização do projeto, a contratada deverá treinar três colaboradores da 
+Faber-Castell para que os mesmos possam atuar em momentos de “possíveis falhas”, 
+manutenção dos equipamentos e para que esses sejam o primeiro contato com a contratada em 
+caso de assistência técnica remota (telefone ou VNC). Os colaboradores que irão receber 
+treinamento deverão conter noções de linguagem de programação, análise de sistemas de 
+informação e automação elétrica;
+
 ## Setup
 
 ### Interface com controlador lógico programável CLP
 
 O software de sistema de visão  possui comunicação com o CLP - [Simens S7 1200](https://cache.industry.siemens.com/dl/files/465/36932465/att_106119/v1/s71200_system_manual_en-US_en-US.pdf) em rede ethernet, 
 o qual envia e recebe informações na linguagem LADDER. 
-O CLP deverá aguardar um byte de informação dos processadores de sistema de visão
-(NUC) avisando que as câmeras e softwares estão OK para iniciar o processo de “liga da máquina”.
+O CLP deverá aguardar um byte de informação dos processadores de sistema de visão avisando que as câmeras e softwares estão OK para iniciar o processo de “liga da máquina”.
 
 ### Câmera
 
-A interface entre o *hardware* da câmera Basler ([acA1300-200uc](https://github.com/caffonso/NW/blob/main/Files/acA1300-200uc_Datasheet.pdf)) e a sistema de visão será realizado através do app ```pypylon```.
+A interface entre o *hardware* da câmera Basler [acA1300-200uc](https://github.com/caffonso/NW/blob/main/Files/acA1300-200uc_Datasheet.pdf) 
+e a sistema de visão será realizado através do app ```pypylon```.
 Para instalação windows:
 ```
 pip3 install pypylon
