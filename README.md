@@ -59,17 +59,18 @@ garantia se aplica ao software quanto:
 
 I. Funcionamento geral (licenças e versões de software compatíveis);\
 II. Captura e qualidade de imagem (caso houver recortes por problemas de trigger, programação e 
-etc.);
+etc.);\
 III. Quanto a acurácia mínima de 90%, caso a mesma venha a decair conforme o tempo, o fornecedor 
 deverá prestar garantia para que esse número seja sempre superior ou igual ao determinado 
-nesse memorial descritivo técnico;
-IV. Durante o período de finalização do projeto, a contratada deverá treinar três colaboradores da 
-Faber-Castell para que os mesmos possam atuar em momentos de “possíveis falhas”, 
+nesse memorial descritivo técnico;\
+IV. Durante o período de finalização do projeto, a Neurowood treinará três colaboradores do cliente
+para que os mesmos possam atuar em momentos de “possíveis falhas”, 
 manutenção dos equipamentos e para que esses sejam o primeiro contato com a contratada em 
 caso de assistência técnica remota (telefone ou VNC). Os colaboradores que irão receber 
 treinamento deverão conter noções de linguagem de programação, análise de sistemas de 
-informação e automação elétrica;
-
+informação e automação elétrica;\
+Em caso de não sucesso na assistência técnica remota, a Neurowood deverá se deslocar até a 
+Cliente e prestar todo suporte necessário para resolução do problema.
 ## Setup
 
 ### Interface com controlador lógico programável CLP
