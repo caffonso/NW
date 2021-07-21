@@ -189,7 +189,7 @@ esteja totalmente ajustada, conforme imagem abaixo. Estas operações sáo reali
 ![image](Files/Sample156.bmp) 
 
 
-
+## Inicio da produção
     
 ### Resolução de problemas.
     
@@ -199,6 +199,6 @@ esteja totalmente ajustada, conforme imagem abaixo. Estas operações sáo reali
 |sugidades ou corpos estranhos                           | Limpar área utilizando um pano seco                           |    
 |imagem fora de foco                                     | Ajuste manual do foco nas lentes                              | 
 |Corte (cropp) irregular, sobre ou falta peça            | Ajustar parâmetros geometricos ```(rx,ry,xc,xy,th) ```        | 
-
+|Não detecta peça                                        | Ajustar variável ```delay```                                  | 
 
 
