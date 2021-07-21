@@ -98,7 +98,7 @@ Os parâmetros internos desse método são:
 | :---:    | :---: | :---: |
 | plc      | Objeto da classe ``` cliente.Client````              | null        |
 | IP       | Endereço do CLP cliente                              |'10.10.0.30' |
-| DB       | bloco byarray recebido do CLP                        |'10.10.0.30' |
+| DB       | bloco bytearray recebido do CLP                        | |
 | rack     | número do rack onde CLP está alocado                 |0            |
 | slot     | número do slot onde o sistema de visão esta alocado  |1            |
 | Class    | Predição do modelo matemático                        |0 ou 1       | 
