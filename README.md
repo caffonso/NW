@@ -77,8 +77,8 @@ Cliente e prestar todo suporte necessário para resolução do problema.
 
 O software de sistema de visão  possui comunicação com o CLP - [Simens S7 1200](https://cache.industry.siemens.com/dl/files/465/36932465/att_106119/v1/s71200_system_manual_en-US_en-US.pdf) em rede ethernet, 
 o qual envia e recebe informações na linguagem LADDER. 
-O CLP deverá aguardar um byte de informação dos processadores de sistema de visão avisando que as câmeras e softwares estão OK para iniciar o processo de “liga da máquina”.
-A conecção entre o sistema de visão e o CLP será realizado através do *Wrapper* [snap7](https://python-snap7.readthedocs.io/en/latest/). A inicialização do CLP como cliente 
+O módulos de comunicação via Ethernet deverá aguardar um byte de informação dos processadores de sistema de visão avisando que as câmeras e softwares estão OK para iniciar o processo de “liga da máquina”.
+A conecção entre o sistema de visão e o módulo de comunicação via Ethernet será realizado através do *Wrapper* [snap7](https://python-snap7.readthedocs.io/en/latest/). A inicialização do CLP como cliente 
 do sistema de visão é realizado pelo método ```OpenPLC()```:
 
     def OpenPLC(IP,rack,slot):
@@ -101,19 +101,21 @@ Os parâmetros internos desse método são:
 | plc      | Objeto da classe ``` cliente.Client```               | null        |
 | IP       | Endereço do CLP cliente                              |'10.10.0.30' |
 | DB       | comprimento do bloco bytearray enviado para CLP      |1            |
-| start    | indereço inicial do logo                             |1, 2, 3      |
+| start    | possição inicial para escritá do bloco butearray     |1, 2, 3      |
 | rack     | número do rack onde CLP está alocado                 |0            |
 | slot     | número do slot onde o sistema de visão esta alocado  |1            |
 | Class    | Predição do modelo matemático                        |0 ou 1       | 
 
-Enquanto o valor do 
+O sistema de visão envia um bloco de sinal continuamente para o módulos de comunicação via ethernet, quanto o CLP receber o valor 9 na possição ```start:1```, isto indicará 
+que o proximo sinal enviado para a possição ```star:2```será o valor da predição do modelo dado pela variável ```Class```, após esse processo o bloco retorna a possição original.
+```
           Sincronize(9,plc,1,1)     ##
           Sincronize(Class,plc,1,2) ## Class
           Sincronize(0,plc,1,3)     ##
           Sincronize(8,plc,1,3)     ##
           Sincronize(0,plc,1,3)     ##
           Sincronize(0,plc,1,1)     ##
-
+```
 ### Câmera
 
 A interface entre o *hardware* da câmera Basler [acA1300-200uc](https://github.com/caffonso/NW/blob/main/Files/acA1300-200uc_Datasheet.pdf) 
