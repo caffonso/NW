@@ -112,10 +112,10 @@ que o proximo sinal enviado para a possição ```star:2```será o valor da predi
           ...
           Sincronize(9,plc,1,1)       # instante 1
           Sincronize(Class,plc,1,2)   # instante 2
-          Sincronize(0,plc,1,3)       # instante 0
-          Sincronize(8,plc,1,3)       # instante 0
-          Sincronize(0,plc,1,3)       # instante 0
-          Sincronize(0,plc,1,1)       # instante 0
+          Sincronize(0,plc,1,3)       # instante 3
+          Sincronize(8,plc,1,3)       # instante 4
+          Sincronize(0,plc,1,3)       # instante 5
+          Sincronize(0,plc,1,1)       # instante 6
           ...
 ```
 
