@@ -90,8 +90,7 @@ do sistema de visão é realizado pelo método ```OpenPLC()```:
 O sistema de visão envia continuamente um bloco bytearray para o CLP através do método ```Sincronize()```. 
 
 
-    def Sincronize(Class,plc,DB,start):       # DB,start
-      #print('Class',Class)
+    def Sincronize(Class,plc,DB,start):       
       plc.db_write(DB,start,bytes([Class]))
 
 Os parâmetros internos desse método são:
@@ -107,17 +106,20 @@ Os parâmetros internos desse método são:
 | Class    | Predição do modelo matemático                        |bytearray(0) | 
 
 O sistema de visão envia um bloco de sinal continuamente para o módulos de comunicação via ethernet, quanto este receber o conteudo ```9``` na possição ```start:1```, isto indicará 
-que o proximo sinal enviado para a possição ```star:2```será o valor da predição do modelo dado pela variável ```Class```, após esse processo o bloco retorna a possição original.
+que o proximo sinal enviado para a possição ```star:2```será o valor da predição do modelo dado pela variável ```Class```, após esse processo o bloco retorna a possição original.  
 ```
-          Sincronize(9,plc,1,1)     ##
-          Sincronize(Class,plc,1,2) ## Class
-          Sincronize(0,plc,1,3)     ##
-          Sincronize(8,plc,1,3)     ##
-          Sincronize(0,plc,1,3)     ##
-          Sincronize(0,plc,1,1)     ##
+          Sincronize(7,plc,1,0)       # instante 0
+          ...
+          Sincronize(9,plc,1,1)       # instante 1
+          Sincronize(Class,plc,1,2)   # instante 2
+          Sincronize(0,plc,1,3)       # instante 0
+          Sincronize(8,plc,1,3)       # instante 0
+          Sincronize(0,plc,1,3)       # instante 0
+          Sincronize(0,plc,1,1)       # instante 0
+          ...
 ```
 
-Exemplo de ```bloco bytearray```, indicando que o processo esta em andamento ```pos0```= 7, foi detectada um peça ```pos1```= 9, e que a 
+Exemplo de ```bloco bytearray```, no instante 2, indicando que o processo esta em andamento ```pos0```= 7, foi detectada um peça ```pos1```= 9, e que a 
 previsão do modelo matático é da classe 1, ```pos2``` = 1.
 
 | possiçao     | 0  |  1  |  2  |  3 | 
