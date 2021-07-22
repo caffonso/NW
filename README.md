@@ -53,6 +53,8 @@ O programa possue os seguintes parâmetros ajustáveis:
 ## *Hardware*
 
 ![image](Files/prototipo neurowood.jpg)
+![image](Files/Sample617.bmp)  
+
 
 ## Garantia e assistência técnica
 
