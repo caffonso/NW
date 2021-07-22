@@ -54,15 +54,15 @@ O programa possue os seguintes parâmetros ajustáveis:
 
 O [sistema de visão](Files/prototipo.jpg) indicado na figura a seguir é composto dos seguintes elemenntos:
 
-* [Camera]
-* [Iluminação]
+* Câmera Basler [acA1300-200uc](https://github.com/caffonso/NW/blob/main/Files/acA1300-200uc_Datasheet.pdf) 
+* Iluminação [ISO8.1](https://github.com/caffonso/NW/blob/main/Files/ISO-8-1.pdf)
 * Módulo de comunição via ethernet [Simens S7 1200](https://cache.industry.siemens.com/dl/files/465/36932465/att_106119/v1/s71200_system_manual_en-US_en-US.pdf)
-* Microprocessador intel [Nuc] (https://www.intel.com.br/content/dam/www/public/us/en/documents/product-briefs/nuc-kit-nuc7i7bnh-brief.pdf)
+* Microprocessador intel [Nuc](https://www.intel.com.br/content/dam/www/public/us/en/documents/product-briefs/nuc-kit-nuc7i7bnh-brief.pdf)
 * Periféricos: monitor, teclado, mause.
 
 ![image](Files/prototipo.jpg)
 
-
+O equipamento de captação de imagens é apresentado a seguir:
 
 ![image](Files/New_NeuroWood0.jpg)
 
@@ -150,9 +150,9 @@ Para instalação windows:
 ```
 pip3 install pypylon
 ```
-Maiores informações sobre os requisitos, setups e instalção do app pode ser obtidas através do link: https://github.com/basler/pypylon
+
 O esquema de iluminação utiliza duas lampadas  ([ISO8.1](https://github.com/caffonso/NW/blob/main/Files/ISO-8-1.pdf)) de 8".
-O acesso ao app **pypylon**, deve ser feito através do prompt através da método ```OpenPylon()```:
+O acesso ao app [pypylon](https://github.com/basler/pypylon), deve ser feito através do prompt através da método ```OpenPylon()```:
 
 ```
     def OpenPylon():
