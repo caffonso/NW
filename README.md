@@ -52,6 +52,14 @@ O programa possue os seguintes parâmetros ajustáveis:
 
 ## *Hardware*
 
+O [sistema de visão](Files/prototipo.jpg) indicado na figura a seguir é composto dos seguintes elemenntos:
+
+* [Camera]
+* [Iluminação]
+* Módulo de comunição via ethernet [Simens S7 1200](https://cache.industry.siemens.com/dl/files/465/36932465/att_106119/v1/s71200_system_manual_en-US_en-US.pdf)
+* Microprocessador intel [Nuc] (https://www.intel.com.br/content/dam/www/public/us/en/documents/product-briefs/nuc-kit-nuc7i7bnh-brief.pdf)
+* Periféricos: monitor, teclado, mause.
+
 ![image](Files/prototipo.jpg)
 
 
