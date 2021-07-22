@@ -52,7 +52,7 @@ O programa possue os seguintes parâmetros ajustáveis:
 
 ## *Hardware*
 
-[sistema de visão](Files/prototipo neurowood.jpg)
+![image](Files/prototipo neurowood.jpg)
 
 ## Garantia e assistência técnica
 
