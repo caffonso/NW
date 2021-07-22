@@ -64,7 +64,7 @@ O [sistema de visão](Files/prototipo.jpg) indicado na figura a seguir é compos
 
 O equipamento de captação de imagens é apresentado a seguir:
 
-![image](Files/New_NeuroWood0.jpg)
+![image](Files/captação.png)
 
 
 
