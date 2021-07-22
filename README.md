@@ -54,7 +54,7 @@ O programa possue os seguintes parâmetros ajustáveis:
 
 ![image](Files/prototipo.jpg)
 
-
+![image](Files/NeuroWood0.jpg)
 
 
 
