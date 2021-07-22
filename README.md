@@ -52,6 +52,8 @@ O programa possue os seguintes parâmetros ajustáveis:
 
 ## *Hardware*
 
+[sistema de visão](Files/prototipo neurowood.jpg)
+
 ## Garantia e assistência técnica
 
 A garantia de 12 meses após a entrega final do equipamento. A 
