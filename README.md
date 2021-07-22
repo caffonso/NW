@@ -54,7 +54,9 @@ O programa possue os seguintes parâmetros ajustáveis:
 
 ![image](Files/prototipo.jpg)
 
-![image](Files/NeuroWood0.jpg)
+
+
+![image](Files/New_NeuroWood0.jpg)
 
 
 
@@ -175,9 +177,6 @@ uma boa captação de imagens:
 
 ![image](Files/Sample617.bmp) 
 
-
-### Imagens dinâmicas
-
 Nesta etápa são ajustadas as imagens em condição de operação portanto, deve-se certificar que a esteira de movimentaçõ deve estar operando
 em velocidade de produção. 
 Acionar o metodoo ``` Enhancement```, conforme ilustração a seguir:
@@ -187,12 +186,18 @@ Acionar o metodoo ``` Enhancement```, conforme ilustração a seguir:
 Os parâmetros a seguir devem ser acessados até que o recorte da imagem esteja adquado:```rx,ry,xc,yc,th```
 
 ![image](Files/Enh.png)
- 
- 
+
 A fim de ajuste as pecas devem ser liberadas manualmente e em pequena quantidade, até que a captura das imagens
 esteja totalmente ajustada, conforme imagem abaixo. Estas operações sáo realizadas pelos métodos, ```wall()``` e ```enhance()```
 
 ![image](Files/Sample156.bmp) 
+
+### Imagens dinâmicas
+
+Com a esteira de alimentação operando na velocidade de processo, a classificação é realizada pelo método ```setup```.
+
+![image](Files/setup.png) 
+
 
 
 ## Inicio da produção
@@ -205,6 +210,6 @@ esteja totalmente ajustada, conforme imagem abaixo. Estas operações sáo reali
 |sugidades ou corpos estranhos                           | Limpar área utilizando um pano seco                           |    
 |imagem fora de foco                                     | Ajuste manual do foco nas lentes                              | 
 |Corte (cropp) irregular, sobre ou falta peça            | Ajustar parâmetros geometricos ```(rx,ry,xc,xy,th) ```        | 
-|Não detecta peça                                        | Ajustar variável ```delay```                                  | 
+|Imagem incompleta or cortada                            | Ajustar variável ```delay```                                  | 
 
 
