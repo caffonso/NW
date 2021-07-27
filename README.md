@@ -140,7 +140,7 @@ previsão do modelo matático é da classe 1, ```pos2``` = 1.
 
 | possiçao     | 0  |  1  |  2  |  3 | 
 | :---:        | :---: | :---: | :---: | :---: | 
-| conteúdo     | b'\x07  |b'\x09    |b'\x01   |b'\x00    |
+| conteúdo     |    7  |  9    |   1   |  0    |
 
 ### Câmera
 
