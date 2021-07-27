@@ -216,7 +216,7 @@ Os sistemas de visão são desenvolvidos para solução customizados de acordo c
 de qualidade definidos pelo cliente.
 Cada modelo matemático representa um aplicação especifico, o qual pode ser definido através da interface:
 
-
+![image](Files/modelo.png)
     
 ### Resolução de problemas.
     
