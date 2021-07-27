@@ -209,6 +209,14 @@ Com a esteira de alimentação operando na velocidade de processo, a classifica�
 
 
 ## Inicio da produção
+
+### Seleção do modelo
+
+Os sistemas de visão são desenvolvidos para solução customizados de acordo com padrões
+de qualidade definidos pelo cliente.
+Cada modelo matemático representa um aplicação especifico, o qual pode ser definido através da interface:
+
+
     
 ### Resolução de problemas.
     
