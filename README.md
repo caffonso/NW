@@ -268,7 +268,7 @@ em
 * ART assinada pelo Engenheiro Responsável e a mesma deve estar descrito conforme 
 NBR-12100 (fornecedor);
 * Todo projeto mecânico/elétrico (Esquemas, layout de painel, lista de material, etc.) 
-deverá ser aprovado pela Equipe de Engenharia Mecânica/Elétrica/Processo da FaberCastell antes da construção do equipamento.
+deverá ser aprovado pela Equipe de Engenharia Mecânica/Elétrica/Processo do cliente antes da construção do equipamento.
 * Todos os serviços elétricos realizados dentro da Faber-Castell, deverão seguir os as 
 normas aplicáveis.
 * Todos os profissionais deverão possuir obrigatoriamente o curso de NR-10, deverão 
@@ -276,7 +276,7 @@ seguir os procedimentos e estarem habilitados, qualificados e capacitados, confo
 determinam as normas.
 * O serviço só poderá ser executado dentro da Faber-Castell com acompanhamento de um
 * Colaborador da Faber-Castell habilitado, qualificado e autorizado pela NR-10.
-* Todos os funcionários Terceiros devem cumprir o procedimento interno Faber-Castell.
+* Todos os funcionários Terceiros devem cumprir o procedimento interno cliente.
 * Todo serviço realizado em altura deverá ser feito por uma pessoa habilitada pela Norma 
 NR-35
 
