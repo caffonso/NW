@@ -164,7 +164,7 @@ O acesso ao app [pypylon](https://github.com/basler/pypylon), deve ser feito atr
 Os parâmetros da câmera deve ser ajustado no app neurowood acessando ``<data><action><pylon>``
     
 
-![image](pylon.png)
+![image](Files/pylon.png)
 
  Aparecera a tela do app da camera onde deve ajustar:
 *  Exposure ( default = 800 )
