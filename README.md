@@ -119,6 +119,10 @@ classificação.
 
 ![image](Files/imagemrede.png)
 
+### Padrão de qualidade
+
+![image](Files/qualidade.png)
+
 
 ## Setup
 
