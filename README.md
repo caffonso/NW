@@ -105,7 +105,13 @@ foram aplicadas algumas técnicas de melhoramento de imagens, conforme a seguir:
 5. Enquadramento 
 6. Padronização da intensidade luminosa
 
-### Aquisição de bases de dados.
+### Fase de aprendizagem
+
+Durante a fase de aprendizagem do software, os especialistas do cliente 
+deverão fornecer suporte técnico no sentido de rotular a qualidade das tábuas, de
+acordo com o posicionamento do defeito. Para tanto será necessário a criação de 
+uma base de imagens de aproximadamente 5.000 (mil) amostras de cada tipo de 
+classificação.
 
 ![image](Files/basedados.png)
 
