@@ -252,9 +252,36 @@ Cada modelo matemático representa uma aplicação especifica, o qual pode ser d
 ![image](Files/modelo.png)
 
 
+## Documentação e obrigações
+
+* Try-Out de Aprovação do Equipamento de no mínimo uma semana e até que atinja a 
+necessidade descrita nesse caderno de especificação, junto à equipe de Engenharia 
+Mecânica/Elétrica/Processo.
+* Start-Up do equipamento junto à contratada, que deverá ser de no mínimo uma semana, 
+junto à equipe de processo. 
+* Entrega de toda documentação (Esquema Elétrico, Lista de Material, Lista de Material de 
+Reposição (Spare Parts), Desenho de Layout do Painel Elétrico revisado em dwg, pdf e 01 
+cópia impressa em papel).
+* Entrega do Programa do CLP elaborada no software de programação Tia Porta Versão 13 
+em
+* Ladder e com comentários;
+* ART assinada pelo Engenheiro Responsável e a mesma deve estar descrito conforme 
+NBR-12100 (fornecedor);
+* Todo projeto mecânico/elétrico (Esquemas, layout de painel, lista de material, etc.) 
+deverá ser aprovado pela Equipe de Engenharia Mecânica/Elétrica/Processo da FaberCastell antes da construção do equipamento.
+* Todos os serviços elétricos realizados dentro da Faber-Castell, deverão seguir os as 
+normas aplicáveis.
+* Todos os profissionais deverão possuir obrigatoriamente o curso de NR-10, deverão 
+seguir os procedimentos e estarem habilitados, qualificados e capacitados, conforme 
+determinam as normas.
+* O serviço só poderá ser executado dentro da Faber-Castell com acompanhamento de um
+* Colaborador da Faber-Castell habilitado, qualificado e autorizado pela NR-10.
+* Todos os funcionários Terceiros devem cumprir o procedimento interno Faber-Castell.
+* Todo serviço realizado em altura deverá ser feito por uma pessoa habilitada pela Norma 
+NR-35
 
     
-### Resolução de problemas.
+## Resolução de problemas.
     
 | problema     | ação  | 
 | :---:        | :---: | 
