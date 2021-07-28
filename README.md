@@ -94,6 +94,17 @@ Cliente e prestar todo suporte necessário para resolução do problema.
 
 ![image](Files/comparativo.png)
 
+### Melhoramento das imagens.
+
+A fim de utilizar as técnicas de aprendizagem de máquina e redes neurais profundas 
+foram aplicadas algumas técnicas de melhoramento de imagens, conforme a seguir:
+1. Posicionamento da imagem versus fundo ( background)
+2. Normalização quanto ao número de pixels
+3. Imagens sintéticas 
+4. Eliminação de borrados 
+5. Enquadramento 
+6. Padronização da intensidade luminosa
+
 ### Aquisição de bases de dados.
 
 ![image](Files/basedados.png)
