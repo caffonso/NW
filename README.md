@@ -66,7 +66,9 @@ O equipamento de captação de imagens é apresentado a seguir:
 
 ![image](Files/captação.png)
 
+O controle o acionamento dos equipamentos eletricos é controlado pelo IHM, a seguir:
 
+![image](Files/IHM.png)
 
 ## Garantia e assistência técnica
 
