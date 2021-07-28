@@ -228,4 +228,4 @@ Cada modelo matemático representa um aplicação especifico, o qual pode ser de
 |Corte (cropp) irregular, sobre ou falta peça            | Ajustar parâmetros geometricos ```(rx,ry,xc,xy,th) ```        | 
 |Imagem incompleta or cortada                            | Ajustar variável ```delay```                                  | 
 
-
+ 
