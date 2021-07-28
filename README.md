@@ -89,6 +89,11 @@ treinamento deverão conter noções de linguagem de programação, análise de 
 informação e automação elétrica;\
 Em caso de não sucesso na assistência técnica remota, a Neurowood deverá se deslocar até a 
 Cliente e prestar todo suporte necessário para resolução do problema.
+
+## Sistema classificação 
+
+![image](Files/comparativo.png)
+
 ## Setup
 
 ### Interface com controlador lógico programável CLP
