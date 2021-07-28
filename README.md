@@ -214,9 +214,12 @@ Com a esteira de alimentação operando na velocidade de processo, a classifica�
 
 Os sistemas de visão são desenvolvidos para solução customizados de acordo com padrões
 de qualidade definidos pelo cliente.
-Cada modelo matemático representa um aplicação especifico, o qual pode ser definido através da interface:
+Cada modelo matemático representa uma aplicação especifica, o qual pode ser definido através da interface:
 
 ![image](Files/modelo.png)
+
+
+
     
 ### Resolução de problemas.
     
@@ -227,5 +230,6 @@ Cada modelo matemático representa um aplicação especifico, o qual pode ser de
 |imagem fora de foco                                     | Ajuste manual do foco nas lentes                              | 
 |Corte (cropp) irregular, sobre ou falta peça            | Ajustar parâmetros geometricos ```(rx,ry,xc,xy,th) ```        | 
 |Imagem incompleta or cortada                            | Ajustar variável ```delay```                                  | 
+
 
  
