@@ -98,6 +98,10 @@ Cliente e prestar todo suporte necessário para resolução do problema.
 
 ![image](Files/basedados.png)
 
+### Como os modelos visualizam as redes.
+
+![image](Files/imagemrede.png)
+
 
 ## Setup
 
