@@ -273,12 +273,12 @@ em
 NBR-12100 (fornecedor);
 * Todo projeto mecânico/elétrico (Esquemas, layout de painel, lista de material, etc.) 
 deverá ser aprovado pela Equipe de Engenharia Mecânica/Elétrica/Processo do cliente antes da construção do equipamento.
-* Todos os serviços elétricos realizados dentro da Faber-Castell, deverão seguir os as 
+* Todos os serviços elétricos realizados dentro do cliente, deverão seguir os as 
 normas aplicáveis.
 * Todos os profissionais deverão possuir obrigatoriamente o curso de NR-10, deverão 
 seguir os procedimentos e estarem habilitados, qualificados e capacitados, conforme 
 determinam as normas.
-* O serviço só poderá ser executado dentro da Faber-Castell com acompanhamento de um Colaborador  habilitado, qualificado e autorizado pela NR-10.
+* O serviço só poderá ser executado dentro do cliente com acompanhamento de um Colaborador  habilitado, qualificado e autorizado pela NR-10.
 * Todos os funcionários Terceiros devem cumprir o procedimento interno cliente.
 * Todo serviço realizado em altura deverá ser feito por uma pessoa habilitada pela Norma 
 NR-35
