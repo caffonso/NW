@@ -58,6 +58,7 @@ O [sistema de visão](Files/prototipo.jpg) indicado na figura a seguir é compos
 * Iluminação [ISO8.1](https://github.com/caffonso/NW/blob/main/Files/ISO-8-1.pdf)
 * Módulo de comunição via ethernet [Simens S7 1200](https://cache.industry.siemens.com/dl/files/465/36932465/att_106119/v1/s71200_system_manual_en-US_en-US.pdf)
 * Microprocessador intel [Nuc](https://www.intel.com.br/content/dam/www/public/us/en/documents/product-briefs/nuc-kit-nuc7i7bnh-brief.pdf)
+* Interface homem-máquina [IHM](https://support.industry.siemens.com/cs/document/109754400/simatic-hmi-option-?dti=0&lc=en-WW) 
 * Periféricos: monitor, teclado, mause.
 
 ![image](Files/prototipo.jpg)
