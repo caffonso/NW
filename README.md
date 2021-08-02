@@ -93,6 +93,9 @@ Cliente e prestar todo suporte necessário para resolução do problema.
 
 ## Sistema classificação. 
 
+O sistema de visão utilizado algoritmos de aprendizagem de máquina, os quais apresentam vantagens operacionais 
+em comparaçãao ao métodos analíticos de processamento de imagem, conforme indicado a seguir:
+
 ![image](Files/comparativo.png)
 
 ### Melhoramento das imagens.
@@ -118,9 +121,16 @@ classificação.
 
 ### Como os modelos visualizam as redes.
 
+A o produto madeira é caracterizado por aspectos visuais heterogênios, como nós, veios, diferenças de tonalidade  que são próprios de tecidos vegetais, e portanto,
+não podem ser caracterizados como defeitos. O sistema de visão deve, portanto, diferenciar esses padrões vegetais, de outras ocorrências que são efetivamente defeitos.
+Os algoritmos de aprendizado de máquina possuem filtros ajustáveis, que possuem a capacidade de se ajustar de forma a identificar somente casos defeituosos conforme
+aprsentado a seguir.
+
 ![image](Files/imagemrede.png)
 
 ### Padrão de qualidade
+
+As soluções propostas são costumizadas, seguintos os critérios de qualidade especificado pelo cliente, e para cada tipo de produto.
 
 ![image](Files/qualidade.png)
 
