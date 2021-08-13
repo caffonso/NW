@@ -288,6 +288,9 @@ Cada modelo matemático representa uma aplicação especifica, o qual pode ser d
 
 ![image](Files/modelo.png)
 
+### Otimizadora
+
+![image](Files/otimizadora.png)
 
 ## Documentação e obrigações
 
