@@ -272,7 +272,7 @@ esteja totalmente ajustada, conforme imagem abaixo. Estas operações sáo reali
 
 ![image](Files/Sample156.bmp) 
 
-### Imagens dinâmicas
+#### Imagens dinâmicas
 
 Com a esteira de alimentação operando na velocidade de processo, a classificação é realizada pelo método ```setup```.
 
