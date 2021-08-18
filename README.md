@@ -324,6 +324,14 @@ NR-35
 
     
 ## Resolução de problemas.
+
+A FMEA foi utilizada para verificar as potenciais falhas de processo. Para isso, é importante primeiramente identificar as possíveis causas e efeitos dessas falhas. De acordo com cada modo de falha é necessário definir a severidade, ocorrência e detecção.
+
+* Severidade da falha (IS): classificação que deve considerar questões importantes para a empresa e seus clientes como a segurança do cliente e a proteção ao meio ambiente. 
+* Ocorrência da falha (IO): indica a probabilidade da falha ocorrer. 
+* Detecção da falha (ID): classificação que mostra a probabilidade do problema ser detectado antes da ocorrência.
+
+Após essa análise, multiplicamos os três números obtidos para encontrar o índice de risco (NPR), quanto maior for o resultado deste índice, mais crítica será aquela falha. O que significa que uma medida de ação corretiva deve ser tomada o quanto antes para evitar maiores problemas. Sendo assim temos as seguintes faixas para o NPR:
     
 | problema     | ação  | 
 | :---:        | :---: | 
