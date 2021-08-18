@@ -346,4 +346,4 @@ Após essa análise, multiplicamos os três números obtidos para encontrar o í
 |Imagem incompleta or cortada                            | Ajustar variável ```delay```                                  | 
 
 
- 
+  
