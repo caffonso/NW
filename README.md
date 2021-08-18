@@ -336,14 +336,4 @@ Após essa análise, multiplicamos os três números obtidos para encontrar o í
 
 ![image](Files/FMEA.png)
 
-    
-| problema     | ação  | 
-| :---:        | :---: | 
-| *over light*                                           | Ajustar *Exposure* da camerâ através do método `pylon`.       |
-|sugidades ou corpos estranhos                           | Limpar área utilizando um pano seco                           |    
-|imagem fora de foco                                     | Ajuste manual do foco nas lentes                              | 
-|Corte (cropp) irregular, sobre ou falta peça            | Ajustar parâmetros geometricos ```(rx,ry,xc,xy,th) ```        | 
-|Imagem incompleta or cortada                            | Ajustar variável ```delay```                                  | 
-
-
-  
+ 
