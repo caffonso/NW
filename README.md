@@ -291,9 +291,13 @@ Cada modelo matemático representa uma aplicação especifica, o qual pode ser d
 ### Otimizadora
 
 O equipamento pode ser utilizado também para o processo de otimização de corte de ripas. Selecionando
-as possições que devem ser serradas. Aumentando desta forma o rendimento do corte.
+as possições que devem ser serradas. Aumentando desta forma o rendimento do corte. 
 
 ![image](Files/otimizadora.png)
+
+Um dos lideres do mercado de otimizadoras é a empresa [Weinig](Files/WEINIG.pdf). 
+
+
 
 ## Documentação e obrigações
 
