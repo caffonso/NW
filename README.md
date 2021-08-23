@@ -298,7 +298,7 @@ as possições que devem ser serradas. Aumentando desta forma o rendimento do co
 Um dos lideres do mercado de otimizadoras é a empresa [Weinig](Files/WEINIG.pdf), composta por uma [Serra automatizada](Files/Weinig_saw.pdf)
 e por um scanner. 
 
-![image](Files/Weinig_saw.png)
+![image](Files/Weinig_saw.jpg)
 
 ## Documentação e obrigações
 
