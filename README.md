@@ -341,4 +341,4 @@ Após essa análise, multiplicamos os três números obtidos para encontrar o í
 
 ![image](Files/FMEA.png)
 
- 
+  
