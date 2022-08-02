@@ -83,7 +83,7 @@ O processo de montagem deve seguir todas especificações de segurança estabele
 - Atenção para as normas de cordialidade e respeito no trato das todas as pessoas envolvidas no processo.
 - Realizar pausas para café 
 
-![image](Files/Intalacao1.jpeg)
+![image](Files/instalacao1.jpeg)
 
 ## Garantia e assistência técnica
 
