@@ -91,8 +91,9 @@ Os equipamentos devem, na medida do possivel, estar isolados de vibrações, rui
 típicas de um ambiente produtivo. 
 Os equipamentos da Sistema de Visão devem, impreterivelmente, serem conectados a um circuito eletrico independente dos demais 
 circuitos de potência, de forma a evitar queimas devido a efeitos de harmônicas, ou  impedâncias indesejadas.
-As carcaças dos equipamentos devem ser aterradas 
-As fontes de tensão devem ser providas de estabilizadores e _no-Breaks_ de forma a evitar a danificação do microprocessador. 
+As carcaças dos equipamentos devem ser aterradas.
+As fontes de tensão devem ser providas de estabilizadores e _no-Breaks_ de forma a evitar a danificação do microprocessador
+por queda de tensão.
 
 
 
