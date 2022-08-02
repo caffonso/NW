@@ -61,7 +61,7 @@ O [sistema de visão](Files/prototipo.jpg) indicado na figura a seguir é compos
 * Interface homem-máquina [IHM](https://support.industry.siemens.com/cs/document/109754400/simatic-hmi-option-?dti=0&lc=en-WW) 
 * Periféricos: monitor, teclado, mouse.
 
-![image](Files/prototipo.jpg)
+![image](Files/nw_faber.jpg)
 
 O equipamento de captação de imagens é apresentado a seguir:
 
