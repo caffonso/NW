@@ -75,6 +75,7 @@ O controle o acionamento dos equipamentos eletricos é controlado pelo IHM, a se
 ## Montagem 
 
 O processo de montagem deve seguir todas especificações de segurança estabelecidas pelo cliente, especialmente quanto:
+- Limpar e organizar local de trabalho antes do inicio das operações
 - Avaliar os riscos e conseguencias das ações a serem realizadas
 - Utilização de EPI's
 - Atentar-se quanto as sinalizações: areás de segurança, corredores de pedestres, extintores, etc.
