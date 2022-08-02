@@ -71,6 +71,20 @@ O controle o acionamento dos equipamentos eletricos é controlado pelo IHM, a se
 
 ![image](Files/IHM.png)
 
+
+## Montagem 
+
+O processo de montagem deve seguir todas especificações de segurança estabelecidas pelo cliente, especialmente quanto:
+- Avaliar os riscos e conseguencias das ações a serem realizadas
+- Utilização de EPI's
+- Atentar-se quanto as sinalizações: areás de segurança, corredores de pedestres, extintores, etc.
+- Acompanhamento dos rsponsaveis pela manutenção do cliente
+- Respeitar os horarios e turnos da fábrica.
+- Atenção para as normas de cordialidade e respeito no trato das todas as pessoas envolvidas no processo.
+- Realizar pausas para café 
+
+![image](Files/intalacao1.jpeg)
+
 ## Garantia e assistência técnica
 
 A garantia de 12 meses após a entrega final do equipamento. A 
