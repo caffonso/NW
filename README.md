@@ -85,6 +85,17 @@ O processo de montagem deve seguir todas especificações de segurança estabele
 
 ![image](Files/instalacao1.jpg)
 
+### Circuitos eletricos
+
+Os equipamentos devem, na medida do possivel, estar isolados de vibrações, ruidos, sugidades, e demais influencias externas
+típicas de um ambiente produtivo. 
+Os equipamentos da Sistema de Visão devem, impreterivelmente, serem conectados a um circuito eletrico independente dos demais 
+circuitos de potência, de forma a evitar queimas devido a efeitos de harmônicas, ou  impedâncias indesejadas.
+As carcaças dos equipamentos devem ser aterradas 
+As fontes de tensão devem ser providas de estabilizadores e _no-Breaks_ de forma a evitar a danificação do microprocessador. 
+
+
+
 ## Garantia e assistência técnica
 
 A garantia de 12 meses após a entrega final do equipamento. A 
