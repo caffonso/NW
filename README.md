@@ -267,6 +267,8 @@ Os parâmetros da câmera deve ser ajustado no app neurowood acessando ``<data><
 *  Exposure ( default = 800 )
 
 ![image](Files/pylon1.JPG)
+
+![image](Files/pylon2.JPG)
     
 ### Capitura das imagem
 
