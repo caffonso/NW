@@ -1,0 +1,17 @@
+app:
+  mode: simulation
+camera:
+  type: simulated
+  width: 1280
+  height: 720
+capture:
+  max_frames: 13
+vision:
+  overlap: 0.25
+  sensitivity: 0.65
+  min_defect_area_px: 40
+plc:
+  type: simulated
+logging:
+  level: INFO
+  file: logs/neurowood.log
