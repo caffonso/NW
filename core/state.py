@@ -1,0 +1,11 @@
+from enum import Enum
+
+class SystemState(str, Enum):
+    STARTING = "STARTING"
+    READY = "READY"
+    WAITING_PIECE = "WAITING_PIECE"
+    CAPTURING = "CAPTURING"
+    PROCESSING = "PROCESSING"
+    REPORTING = "REPORTING"
+    FAULT = "FAULT"
+    STOPPED = "STOPPED"
