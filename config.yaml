@@ -1,9 +1,10 @@
 app:
-  mode: simulation
+  show_images: true
 camera:
-  type: simulated
+  type: file
+  image_path: "D:/mattes/sample5.jpeg"
   width: 1280
-  height: 720
+  height: 1024
 capture:
   max_frames: 13
 vision:

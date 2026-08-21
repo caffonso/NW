@@ -1,20 +1,10 @@
 import logging
 from pathlib import Path
-
-def setup_logging(config):
-    level = getattr(logging, str(config.get("level", "INFO")).upper(), logging.INFO)
-    log_file = Path(config.get("file", "logs/neurowood.log"))
-    log_file.parent.mkdir(parents=True, exist_ok=True)
-
-    logger = logging.getLogger("neurowood")
-    logger.setLevel(level)
-
-    if not logger.handlers:
-        formatter = logging.Formatter("%(asctime)s | %(levelname)s | %(message)s")
-        fh = logging.FileHandler(log_file, encoding="utf-8")
-        fh.setFormatter(formatter)
-        sh = logging.StreamHandler()
-        sh.setFormatter(formatter)
-        logger.addHandler(fh)
-        logger.addHandler(sh)
-    return logger
+def setup_logging(cfg):
+    p=Path(cfg.get("file","logs/neurowood.log")); p.parent.mkdir(exist_ok=True)
+    log=logging.getLogger("neurowood"); log.setLevel(logging.INFO)
+    if not log.handlers:
+        fmt=logging.Formatter("%(asctime)s | %(levelname)s | %(message)s")
+        for h in [logging.FileHandler(p,encoding="utf-8"),logging.StreamHandler()]:
+            h.setFormatter(fmt); log.addHandler(h)
+    return log

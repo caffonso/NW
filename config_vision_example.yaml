@@ -1,0 +1,18 @@
+conveyor:
+  nominal_speed_mm_s: 600
+  speed_factor: 1.0
+
+capture:
+  frame_spacing_mm: 225
+  max_frames: 13
+
+vision:
+  piece_min_contrast: 25
+  piece_min_height_frac: 0.10
+  piece_sample_step: 8
+
+  # Detector de textura do notebook:
+  # < 1.0 = mais sensível; 1.0 = padrão; > 1.0 = mais conservador
+  rigor: 1.5
+  min_area_frac: 0.003
+  min_width_frac: 0.08

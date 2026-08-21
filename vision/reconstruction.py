@@ -1,14 +1,22 @@
 import numpy as np
 
-def reconstruct_board(piece_frames, overlap=0.25):
-    if not piece_frames:
-        raise ValueError("piece_frames is empty")
-    images = [pf.image for pf in piece_frames]
-    width = images[0].shape[1]
-    step = max(1, int(width*(1-overlap)))
-    total_width = step*(len(images)-1) + width
-    board = np.zeros((images[0].shape[0], total_width), dtype=images[0].dtype)
-    for i, image in enumerate(images):
-        x = i*step
-        board[:, x:x+width] = image
-    return board
+
+def reconstruct_board(results, use_marked=True):
+    """
+    Reconstrói a tábua concatenando os patches na ordem.
+
+    Parameters
+    ----------
+    results : list
+        Saída de detect_texture_defects().
+    use_marked : bool
+        True -> usa imagens com defeitos marcados.
+        False -> usa imagens originais.
+    """
+    if not results:
+        raise ValueError("results está vazio; não é possível reconstruir a peça.")
+
+    key = "marked_image" if use_marked else "image"
+    images = [r[key] for r in results]
+
+    return np.concatenate(images, axis=1)

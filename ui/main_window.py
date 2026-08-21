@@ -1,1 +1,1 @@
-"""PySide6 HMI placeholder for NeuroWood 2.4.0."""
+"""PySide6 será adicionado em etapa posterior."""
