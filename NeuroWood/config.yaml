@@ -1,0 +1,25 @@
+app:
+  show_images: true
+camera:
+  type: file
+  image_path: "D:/mattes/sample5.jpeg"
+  width: 1280
+  height: 1024
+conveyor:
+  nominal_speed_mm_s: 600.0
+  speed_factor: 1.0
+capture:
+  max_frames: 13
+  frame_spacing_mm: 225.0
+vision:
+  piece_min_contrast: 25.0
+  piece_min_height_frac: 0.10
+  piece_sample_step: 8
+  rigor: 1.5
+  min_area_frac: 0.003
+  min_width_frac: 0.08
+plc:
+  type: simulated
+logging:
+  level: INFO
+  file: logs/neurowood.log

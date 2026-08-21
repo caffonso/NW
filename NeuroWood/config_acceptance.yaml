@@ -1,0 +1,13 @@
+acceptance:
+  # Classificação do tamanho pelo percentual da área do patch.
+  # Pequeno: area_pct <= 2.0
+  # Médio : 2.0 < area_pct <= 6.0
+  # Grande: area_pct > 6.0
+  small_max_area_pct: 1.0
+  medium_max_area_pct: 3.0
+
+  # Quantidade máxima permitida por tábua.
+  # Os limites são inclusivos.
+  max_small: 3
+  max_medium: 2
+  max_large: 1

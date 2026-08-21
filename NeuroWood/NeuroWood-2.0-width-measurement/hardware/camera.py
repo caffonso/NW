@@ -1,0 +1,9 @@
+from abc import ABC, abstractmethod
+
+class Camera(ABC):
+    @abstractmethod
+    def open(self): ...
+    @abstractmethod
+    def capture(self): ...
+    @abstractmethod
+    def close(self): ...

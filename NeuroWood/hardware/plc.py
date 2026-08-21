@@ -1,0 +1,9 @@
+from abc import ABC, abstractmethod
+
+class PLC(ABC):
+    @abstractmethod
+    def connect(self): ...
+    @abstractmethod
+    def send_result(self, result): ...
+    @abstractmethod
+    def disconnect(self): ...
