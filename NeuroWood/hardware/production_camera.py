@@ -16,16 +16,11 @@ class ProductionSimulationCamera(Camera):
     """
     Câmera virtual para simulação de produção em série.
 
-    Cada tábua:
-    - sorteia N patches do diretório;
-    - escolhe uma largura física simulada;
-    - converte os patches em frames completos 1280x1024;
-    - usa 2 px/mm por padrão;
-    - mantém a mesma largura em todos os frames da mesma tábua.
+    Por padrão, a tábua simulada tem 400 mm, pois os patches de referência
+    usados nesta etapa correspondem a tábuas de 400 mm.
 
-    O primeiro capture() após begin_board() é usado pelo pipeline apenas para
-    detectar a presença da peça. Em seguida, os N captures usados na captura
-    da peça retornam os N patches, começando novamente pelo patch 0.
+    A faixa continua configurável: se width_min_mm != width_max_mm, a largura
+    é sorteada dentro da faixa para testes posteriores.
     """
 
     def __init__(
@@ -35,8 +30,8 @@ class ProductionSimulationCamera(Camera):
         frame_width=1280,
         frame_height=1024,
         pixels_per_mm=2.0,
-        width_min_mm=90.0,
-        width_max_mm=220.0,
+        width_min_mm=400.0,
+        width_max_mm=400.0,
         background_intensity=35,
         seed=None,
     ):
@@ -88,6 +83,14 @@ class ProductionSimulationCamera(Camera):
         if self.width_min_mm <= 0 or self.width_max_mm < self.width_min_mm:
             raise ValueError("Faixa de largura simulada inválida.")
 
+        max_supported_mm = (self.frame_height - 80) / self.pixels_per_mm
+        if self.width_max_mm > max_supported_mm:
+            raise ValueError(
+                f"Largura simulada {self.width_max_mm:.1f} mm excede o máximo "
+                f"de {max_supported_mm:.1f} mm para frame_height={self.frame_height} "
+                f"e pixels_per_mm={self.pixels_per_mm}."
+            )
+
         self.connected = True
 
     def close(self):
@@ -109,15 +112,16 @@ class ProductionSimulationCamera(Camera):
         self.current_board_index += 1
         self._capture_counter = 0
 
-        self.current_width_mm = self.rng.uniform(
-            self.width_min_mm,
-            self.width_max_mm,
-        )
+        if self.width_min_mm == self.width_max_mm:
+            self.current_width_mm = float(self.width_min_mm)
+        else:
+            self.current_width_mm = self.rng.uniform(
+                self.width_min_mm,
+                self.width_max_mm,
+            )
+
         self.current_width_px = int(
             round(self.current_width_mm * self.pixels_per_mm)
-        )
-        self.current_width_px = int(
-            np.clip(self.current_width_px, 40, self.frame_height - 80)
         )
         self.current_width_mm = self.current_width_px / self.pixels_per_mm
 
@@ -152,8 +156,6 @@ class ProductionSimulationCamera(Camera):
         if not self._current_frames:
             self.begin_board()
 
-        # capture 0 = frame de presença.
-        # captures 1..N = frames 0..N-1 da peça.
         if self._capture_counter == 0:
             frame = self._current_frames[0]
         else:
@@ -173,12 +175,8 @@ class ProductionSimulationCamera(Camera):
         if patch is None:
             raise ValueError(f"Não foi possível abrir patch: {path}")
 
-        # Mantém a textura da imagem, mas garante contraste suficiente em
-        # relação ao fundo escuro usado pela simulação.
         patch = self._ensure_wood_brightness(patch)
 
-        # Preenche toda a largura do frame. A altura representa a largura
-        # física da tábua na imagem original: width_px = width_mm * 2.
         patch = cv2.resize(
             patch,
             (self.frame_width, target_board_height),

@@ -1,0 +1,37 @@
+NEUROWOOD — TESTE DE LARGURA ROBUSTA
+
+Arquivos alterados:
+- gui.py
+- core/pipeline.py
+- hardware/production_camera.py
+- storage/production_report.py
+
+Arquivo novo:
+- vision/width_measurement.py
+
+O que mudou:
+1. Produção simulada começa com largura fixa de 400 mm.
+2. 400 mm a 2 px/mm = 800 pixels no frame 1280x1024.
+3. A largura é medida apenas no primeiro frame original.
+4. A segmentação usa diferença contra fundo, morfologia e maior componente.
+5. São feitas 50 medições distribuídas na largura do frame.
+6. Outliers são removidos por MAD.
+7. width_mm é a mediana.
+8. width_max_mm é o percentil 95, não o máximo bruto.
+9. O CSV registra erro em relação ao ground truth de 400 mm e o desvio da medição.
+
+Primeiro teste recomendado:
+- Produção simulada
+- Largura mínima = 400
+- Largura máxima = 400
+- 20 tábuas
+- Verificar no CSV:
+  width_mm
+  width_error_mm
+  width_std_mm
+  valid_width_samples
+
+Resultado esperado para patches sem problema de borda:
+- width_mm próximo de 400 mm
+- width_error_mm próximo de 0
+- width_std_mm baixo

@@ -513,34 +513,9 @@ class NeurowoodWindow(QMainWindow):
         self.board_scroll = QScrollArea()
         self.board_scroll.setWidgetResizable(False)
         self.board_label = ImageLabel("A peça reconstruída aparecerá aqui.")
-        self.board_label.setMinimumSize(850,100)#(700, 320)
+        self.board_label.setMinimumSize(850,160)#(700, 320)
         self.board_scroll.setWidget(self.board_label)
         board_layout.addWidget(self.board_scroll)
-
-        # Imagem institucional exibida na área livre abaixo da peça reconstruída.
-        self.system_overview_label = QLabel()
-        self.system_overview_label.setAlignment(Qt.AlignCenter)
-
-        system_overview_path = (
-            Path(__file__).resolve().parent
-            / "assets"
-            / "neurowood_system_overview.png"
-        )
-
-        if system_overview_path.exists():
-            system_overview_pixmap = QPixmap(str(system_overview_path))
-            if not system_overview_pixmap.isNull():
-                self.system_overview_label.setPixmap(
-                    system_overview_pixmap.scaled(
-                        780,#900,
-                        550,
-                        Qt.KeepAspectRatio,
-                        Qt.SmoothTransformation,
-                    )
-                )
-
-        board_layout.addWidget(self.system_overview_label)
-
         self.tabs.addTab(board_tab, "Peça reconstruída")
 
         # Patches
@@ -662,8 +637,8 @@ class NeurowoodWindow(QMainWindow):
         self.production_boards.setValue(20)
         layout.addRow("Nº de tábuas", self.production_boards)
 
-        self.production_width_min = self._double_spin(20, 500, 400, 5, 1)
-        self.production_width_max = self._double_spin(20, 500, 400, 5, 1)
+        self.production_width_min = self._double_spin(20, 500, 90, 5, 1)
+        self.production_width_max = self._double_spin(20, 500, 220, 5, 1)
         layout.addRow("Largura mín. (mm)", self.production_width_min)
         layout.addRow("Largura máx. (mm)", self.production_width_max)
 
@@ -791,7 +766,7 @@ class NeurowoodWindow(QMainWindow):
 
         layout.addRow("Classe", self.classification_label)
         layout.addRow("Board ID", self.board_id_label)
-        layout.addRow("Largura", self.width_label)
+        layout.addRow("Largura máxima", self.width_label)
         layout.addRow("Defeitos", self.defects_label)
         layout.addRow("Tempo", self.processing_label)
         layout.addRow(self.summary_label)
